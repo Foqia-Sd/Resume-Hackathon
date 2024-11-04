@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Shareable Resume</h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your Username" required />
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+
+            <label for="phone">Contact Info:</label>
+            <input type="tel" id="phone" placeholder="Enter your number" required />
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Enter your Qualification" rows="3" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Enter your Experience" rows="3" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Enter your Skills" rows="3" required></textarea>
+        </fieldset>
+
+         <!-- Generate Resume -->
+        <button type="submit"><strong>Generate Resume</strong></button>
+    </form>
+
+    <br>
+
+    <!-- Editable Resume -->
+     <div id="resume-display" contenteditable="true">
+        <!-- Resume Output -->
+     </div>
+
+     <br>
+     <!-- Sareable and download section -->
+      <div id="shareable-link-container" style="display: none;">
+        <h2>View Resume</h2>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf"><strong>Download PDF</strong></button>
+      </div>
+
+     <script src="script.js"></script>
+
+</body>
+</html>
